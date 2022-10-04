@@ -1,6 +1,6 @@
-## This Repo Is For Beginner Developers
+# This Repo Is For Beginner Developers
 
-# counterapp
+## counterapp
 
 A new Flutter project.
 
