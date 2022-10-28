@@ -55,6 +55,12 @@ class _MyHomePageState extends State<MyHomePage> {
       _counter=_counter*2;
     });
   }
+  
+  void _divisionCounter() {
+    setState(() {     
+      _counter=_counter/2;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -85,11 +91,15 @@ class _MyHomePageState extends State<MyHomePage> {
           FloatingActionButton(
               onPressed: _decrementCounter,
               tooltip: 'Decrement',
-              child: const Icon(Icons.remove))
+              child: const Icon(Icons.remove)),
          FloatingActionButton(
               onPressed: _multiplyCounter,
               tooltip: 'Multiply By 2',
-              child: const Icon(Icons.close))
+              child: const Icon(Icons.close)),
+          FloatingActionButton(
+              onPressed: _multiplyCounter,
+              tooltip: 'Multiply By 2',
+              child: const Icon(Icons.modeEdit))
         ],
       ),
     );
