@@ -39,8 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
   void _incrementCounter() {
-    setState(() {
-     
+    setState(() {     
       _counter++;
     });
   }
@@ -48,6 +47,12 @@ class _MyHomePageState extends State<MyHomePage> {
   void _decrementCounter() {
     setState(() {
       _counter--;
+    });
+  }
+  
+  void _multiplyCounter() {
+    setState(() {     
+      _counter=_counter*2;
     });
   }
 
@@ -81,6 +86,10 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: _decrementCounter,
               tooltip: 'Decrement',
               child: const Icon(Icons.remove))
+         FloatingActionButton(
+              onPressed: _multiplyCounter,
+              tooltip: 'Multiply By 2',
+              child: const Icon(Icons.close))
         ],
       ),
     );
